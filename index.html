@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Amit Bhattarai - Professional Chartered Accountant Services in India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,18 +12,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: #333;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #34495e;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            border-bottom: #e74c3c 3px solid;
         }
         header a {
             color: #fff;
@@ -49,45 +51,69 @@
             margin-top: 10px;
         }
         #banner {
-            background: #000;
+            background: #2c3e50;
             color: #fff;
             text-align: center;
             padding: 50px 0;
         }
         .card-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 20px;
         }
         .card {
-            background: #444;
-            color: #fff;
+            background: #ecf0f1;
+            color: #34495e;
             padding: 20px;
             width: 30%;
-            transition: background 0.3s;
+            margin: 10px 0;
+            transition: background 0.3s, color 0.3s;
+            box-sizing: border-box;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .card:hover {
-            background: #666;
+        .card:hover, .card.active {
+            background: #e74c3c;
+            color: #fff;
         }
         .card h3 {
             margin-top: 0;
         }
         .card p {
             display: none;
+            margin-top: 10px;
         }
-        .card:hover p {
+        .card:hover p, .card.active p {
             display: block;
+            text-align: justify;
         }
         section {
             padding: 20px;
             margin: 20px 0;
         }
         footer {
-            background: #333;
+            background: #34495e;
             color: #fff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+        }
+        .fas {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            header nav ul {
+                text-align: center;
+            }
+            header nav ul li {
+                display: block;
+                padding: 10px 0;
+            }
         }
     </style>
 </head>
@@ -95,7 +121,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>CA Amit Bhattarai</h1>
+                <h1><i class="fas fa-briefcase"></i> CA Amit Bhattarai</h1>
             </div>
             <nav>
                 <ul>
@@ -111,16 +137,16 @@
             <h1>Professional Chartered Accountant Services in India</h1>
             <div class="card-container">
                 <div class="card">
-                    <h3>Qualifications</h3>
+                    <h3><i class="fas fa-user-graduate"></i> Qualifications</h3>
                     <p>CA Amit Bhattarai is a certified Chartered Accountant with extensive experience in financial management, auditing, and taxation.</p>
                 </div>
                 <div class="card">
-                    <h3>Services Provided</h3>
+                    <h3><i class="fas fa-briefcase"></i> Services Provided</h3>
                     <p>We offer a wide range of services including taxation, accounting, auditing, financial advisory, and certification & attestation.</p>
                 </div>
                 <div class="card">
-                    <h3>Contact Information</h3>
-                    <p>Phone: +91-9999455360<br>Email: caamit0507@gmail.com<br>Address: [Your Address], [City], [State], [Country]</p>
+                    <h3><i class="fas fa-address-book"></i> Contact Information</h3>
+                    <p>Phone: +91-9999455360<br>Email: caamit0507@gmail.com<br>Address: New Delhi, India</p>
                 </div>
             </div>
         </div>
@@ -136,23 +162,23 @@
             <h2>Our Services</h2>
             <ul>
                 <li>
-                    <h3>Taxation Services</h3>
+                    <h3><i class="fas fa-file-invoice-dollar"></i> Taxation Services</h3>
                     <p>We provide comprehensive taxation services including income tax return filing, tax planning, and compliance with various tax laws.</p>
                 </li>
                 <li>
-                    <h3>Accounting and Bookkeeping</h3>
+                    <h3><i class="fas fa-book"></i> Accounting and Bookkeeping</h3>
                     <p>Our team offers expert accounting and bookkeeping services to help businesses maintain accurate financial records and comply with accounting standards.</p>
                 </li>
                 <li>
-                    <h3>Auditing Services</h3>
+                    <h3><i class="fas fa-search-dollar"></i> Auditing Services</h3>
                     <p>We conduct thorough audits to ensure compliance with regulatory requirements and provide valuable insights for business improvement.</p>
                 </li>
                 <li>
-                    <h3>Financial Advisory</h3>
+                    <h3><i class="fas fa-chart-line"></i> Financial Advisory</h3>
                     <p>Our financial advisory services include financial planning, investment advisory, and risk management to help clients make informed financial decisions.</p>
                 </li>
                 <li>
-                    <h3>Certification and Attestation</h3>
+                    <h3><i class="fas fa-certificate"></i> Certification and Attestation</h3>
                     <p>We offer certification and attestation services for various financial and legal documents required under different laws and regulations.</p>
                 </li>
             </ul>
@@ -163,9 +189,9 @@
             <h2>Contact Us</h2>
             <p>For professional Chartered Accountant services, feel free to contact us:</p>
             <ul>
-                <li><strong>Phone:</strong> +91-9999455360</li>
-                <li><strong>Email:</strong> caamit0507@gmail.com</li>
-                <li><strong>Address:</strong> [Your Address], [City], [State], [Country]</li>
+                <li><i class="fas fa-phone"></i> <strong>Phone:</strong> +91-9999455360</li>
+                <li><i class="fas fa-envelope"></i> <strong>Email:</strong> caamit0507@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> New Delhi, India</li>
             </ul>
         </div>
     </section>
@@ -174,5 +200,12 @@
             <p>&copy; 2025 CA Amit Bhattarai. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
