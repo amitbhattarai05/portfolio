@@ -48,19 +48,35 @@
             float: right;
             margin-top: 10px;
         }
-        #showcase {
-            min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
-            text-align: center;
+        #banner {
+            background: #000;
             color: #fff;
+            text-align: center;
+            padding: 50px 0;
         }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
         }
-        #showcase p {
-            font-size: 20px;
+        .card {
+            background: #444;
+            color: #fff;
+            padding: 20px;
+            width: 30%;
+            transition: background 0.3s;
+        }
+        .card:hover {
+            background: #666;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            display: none;
+        }
+        .card:hover p {
+            display: block;
         }
         section {
             padding: 20px;
@@ -90,10 +106,23 @@
             </nav>
         </div>
     </header>
-    <section id="showcase">
+    <section id="banner">
         <div class="container">
             <h1>Professional Chartered Accountant Services in India</h1>
-            <p>Expertise in Taxation, Accounting, Auditing, and Financial Advisory</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Qualifications</h3>
+                    <p>CA Amit Bhattarai is a certified Chartered Accountant with extensive experience in financial management, auditing, and taxation.</p>
+                </div>
+                <div class="card">
+                    <h3>Services Provided</h3>
+                    <p>We offer a wide range of services including taxation, accounting, auditing, financial advisory, and certification & attestation.</p>
+                </div>
+                <div class="card">
+                    <h3>Contact Information</h3>
+                    <p>Phone: +91-9999455360<br>Email: caamit0507@gmail.com<br>Address: [Your Address], [City], [State], [Country]</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="about">
